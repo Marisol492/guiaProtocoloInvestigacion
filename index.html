@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Protocolo de Investigación</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="java.js"></script>
+</head>
+
+<body>
+    <header>Guia de Protocolo de Investigación</header>
+    <div class="row">
+        <div class="column">
+            <h1>Bot</h1>
+            <div id="pasoDelBot">0</div>
+
+
+            <button type="button" onclick='bot(0)'> - </button>
+            <button type="button" onclick='bot(1)'> + </button>
+
+            <div id="bot"> </div>
+
+
+        </div>
+        <div class="column">
+            <h1>Elementos</h1>
+
+            <h3>Objetivo</h3>
+            <input id="objetivo" type="text">
+            <button type="button" onclick='entrada("objetivo")'> + </button>
+            <div class="custom-select" style="width:200px;">
+                <select>
+                    <option value="0"> Verbos Sugeridos</option>
+                    <option value="1"> analizar </option>
+                    <option value="2"> enumerar </option>
+                    <option value="3"> relatar </option>
+                    <option value="4"> calcular </option>
+                    <option value="5"> establecer </option>
+                    <option value="6"> replicar </option>
+                    <option value="7"> categorizar </option>
+                    <option value="8"> evaluar </option>
+                    <option value="9"> reproducir </option>
+                    <option value="10"> comparar </option>
+                    <option value="11"> explicar </option>
+                    <option value="12"> revelar </option>
+                    <option value="13"> compilar </option>
+                    <option value="14"> examinar </option>
+                    <option value="15"> reproducir </option>
+                    <option value="16"> contrastar </option>
+                    <option value="17"> exponer </option>
+                    <option value="18"> plantear </option>
+                    <option value="19"> crear </option>
+                    <option value="20"> formular </option>
+                    <option value="21"> planear </option>
+                    <option value="22"> definir </option>
+                    <option value="23"> fundamentar </option>
+                    <option value="24"> presentar </option>
+                    <option value="25"> demostrar </option>
+                    <option value="26"> generar </option>
+                    <option value="27"> probar </option>
+                    <option value="28"> desarrollar </option>
+                    <option value="29"> identificar </option>
+                    <option value="30"> producir </option>
+                    <option value="31"> describir </option>
+                    <option value="32"> inferir </option>
+                    <option value="33"> proponer </option>
+                    <option value="34"> diagnosticar </option>
+                    <option value="35"> mostrar </option>
+                    <option value="36"> situar </option>
+                    <option value="37"> discriminar </option>
+                    <option value="38"> orientar </option>
+                    <option value="39"> tasar </option>
+                    <option value="40"> diseñar </option>
+                    <option value="41"> oponer </option>
+                    <option value="42"> trazar </option>
+                    <option value="43"> efectuar </option>
+                    <option value="44"> reconstruir </option>
+                    <option value="45"> valuar </option>
+                    <option value="46">  advertir </option>
+                    <option value="47"> determinar </option>
+                    <option value="48"> indicar </option>
+                    <option value="49"> analizar </option>
+                    <option value="50"> designar </option>
+                    <option value="51"> interpretar </option>
+                    <option value="52"> basar </option>
+                    <option value="53"> descomponer </option>
+                    <option value="54"> justificar </option>
+                    <option value="55"> calcular </option>
+                    <option value="56"> describir </option>
+                    <option value="57"> mencionar </option>
+                    <option value="58"> calificar </option>
+                    <option value="59"> discriminar </option>
+                    <option value="60"> mostrar </option>
+                    <option value="61"> categorizar </option>
+                    <option value="62"> distinguir </option>
+                    <option value="63"> operacionalizar </option>
+                    <option value="64"> comparar </option>
+                    <option value="65"> establecer </option>
+                    <option value="66"> organizar </option>
+                    <option value="67"> componer </option>
+                    <option value="68"> enunciar </option>
+                    <option value="69"> registrar </option>
+                    <option value="70"> conceptuar </option>
+                    <option value="71"> enumerar </option>
+                    <option value="72"> relacionar </option>
+                    <option value="73"> considerar </option>
+                    <option value="74"> especificar </option>
+                    <option value="75"> resumir </option>
+                    <option value="76"> contrastar </option>
+                    <option value="77"> estimar </option>
+                    <option value="78"> seleccionar </option>
+                    <option value="79"> deducir </option>
+                    <option value="80"> examinar </option>
+                    <option value="81"> separar </option>
+                    <option value="82"> definir </option>
+                    <option value="83"> explicar </option>
+                    <option value="84"> sintetizar </option>
+                    <option value="85"> demostrar </option>
+                    <option value="86"> fraccionar </option>
+                    <option value="87"> sugerir </option>
+                    <option value="88"> detallar </option>
+                    <option value="89"> identificar </option>
+                    <option value="90"> terminar </option>
+                </select>
+            </div>
+            <h3>Donde </h3>
+            <input id="donde" type="text">
+            <button type="button" onclick='entrada("donde")'> + </button>
+
+            <h3>Como </h3>
+            <input id="como" type="text">
+            <button type="button" onclick='entrada("como")'> + </button>
+
+            <h3>Porque</h3>
+            <input id="porque" type="text">
+            <button type="button" onclick='entrada("porque")'> + </button>
+
+            <h3>Problema</h3>
+            <input id="problema" type="text">
+            <button type="button" onclick='entrada("problema")'> + </button>
+
+            <h3>Hipótesis</h3>
+            <input id="hipotesis" type="text">
+            <button type="button" onclick='entrada("hipotesis")'> + </button>
+
+            <h3>Metodología</h3>
+            <input id="metodologia" type="text">
+            <button type="button" onclick='entrada("metodologia")'> + </button>
+
+            <h3>Marco Teórico</h3>
+            <input id="marco" type="text">
+            <button type="button" onclick='entrada("marco")'> + </button>
+
+            <h3>Objeto de Estudio</h3>
+            <input id="estudio" type="text">
+            <button type="button" onclick='entrada("estudio")'> + </button>
+
+            <h3>Interrogantes</h3>
+            <input id="interrogantes" type="text">
+            <button type="button" onclick='entrada("interrogantes")'> + </button>
+
+            <h3>Argumentos</h3>
+            <input id="argumentos" type="text">
+            <button type="button" onclick='entrada("argumentos")'> + </button>
+
+            <h3>Unidades de Observación</h3>
+            <input id="unidades" type="text">
+            <button type="button" onclick='entrada("unidades")'> + </button>
+
+            <h3>Variables</h3>
+            <input id="variables" type="text">
+            <button type="button" onclick='entrada("variables")'> + </button>
+
+            <h3>Universo</h3>
+            <input id="universo" type="text">
+            <button type="button" onclick='entrada("universo")'> + </button>
+
+            <h3>Muestra</h3>
+            <input id="muestra" type="text">
+            <button type="button" onclick='entrada("muestra")'> + </button>
+
+
+
+        </div>
+        <div class="column">
+            <h1> Documento </h1>
+            <button type="button" onclick='crearDocumento()'> Ver Documento </button>
+            <div id="documento"></div>
+
+        </div>
+    </div>
+</body>
+
+</html>

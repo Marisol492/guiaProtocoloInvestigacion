@@ -1,0 +1,17 @@
+
+header{
+    font-size: x-large;
+    text-align: center;
+}
+.column {
+    float: left;
+    width: 33.33%;
+
+  }
+  
+  /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
